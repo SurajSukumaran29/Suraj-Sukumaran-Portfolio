@@ -1,0 +1,518 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #121212;
+  color: #e0e0e0;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+h1, h2 {
+  color: #f5f5f5;
+  text-align: center;
+}
+
+/* Full-screen Sections */
+section {
+  min-height: 100vh; /* Ensure each section fills the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+/* Navigation */
+nav {
+  background: #1f1f1f;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Header */
+/* Header Section with Background Image */
+header {
+  text-align: center;
+  padding: 4rem 0;
+  background: url('Header-Background.jpg') no-repeat center center; /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire header */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for definition */
+  border-radius: 10px;
+  margin: 2rem;
+  color: #f5f5f5;
+}
+
+/* Profile Picture Styling */
+header .profile-pic {
+  margin-right: 2rem; /* Space between image and text */
+  display: flex;
+  justify-content: center; /* Align image properly */
+  position: relative; /* Allows adjustment with top/left */
+  top: 100px; /* Move down a bit */
+  left: -490px; /* Move to the left a bit */
+}
+
+header .profile-pic img {
+  width: 300px; /* Adjust size */
+  height: 300px;
+  border-radius: 15px; /* Rounded square effect */
+  object-fit: cover; /* Ensure image fits well within the box */
+  border: 0px solid #fff; /* Optional border for definition */
+}
+
+/* Header text positioning */
+header .header-text {
+  text-align: left;
+  color: #f5f5f5;
+  position: relative; /* Enables shifting */
+  top: -150px; /* Moves the header text upwards */
+}
+
+
+header h1 {
+  font-size: 3.5rem; /* Big text for your name */
+  font-weight: bold;
+}
+
+header .tagline {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Social Icons inside Header */
+header .social-icons-vertical {
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  gap: 1rem; /* Space between the icons */
+  position: absolute;
+  right: 2rem; /* Position the icons on the right side */
+  top: 50%; /* Align vertically centered */
+  transform: translateY(-50%); /* Center the icons */
+}
+header .social-icons-vertical .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: #e0e0e0;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  width: 150px; /* Fixed width for uniform buttons */
+  text-align: center;
+}
+header .social-icons-vertical .social-link:hover {
+  background: #007bff;
+  color: #fff;
+}
+header .social-icons-vertical .social-link i {
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+
+/* Social Icons inside Header */
+header .social-icons-vertical {
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  gap: 1rem; /* Space between the icons */
+  position: absolute;
+  right: 2rem; /* Position the icons on the right side */
+  top: 50%; /* Align vertically centered */
+  transform: translateY(-50%); /* Center the icons */
+}
+header .social-icons-vertical .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: #e0e0e0;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  width: 150px; /* Fixed width for uniform buttons */
+  text-align: center;
+}
+header .social-icons-vertical .social-link:hover {
+  background: #007bff;
+  color: #fff;
+}
+header .social-icons-vertical .social-link i {
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+/* Tagline Bold and Big */
+header .tagline-bold {
+  font-size: 1.5rem; /* Adjust size for bold and big text */
+  font-weight: bold;
+  color: #e0e0e0; /* Golden color for emphasis */
+  margin-top: -1.5rem;
+  text-align: center; /* Align with name */
+}
+
+
+/* About Me Section */
+#about {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem; /* Increase the font size */
+  line-height: 1.8; /* Adjust line height for better readability */
+  color: #f5f5f5; /* Ensure text color matches the overall theme */
+  text-align: justify; /* Optional: Align text for a cleaner look */
+  padding: 2rem; /* Add spacing for visual balance */
+}
+
+#about h2 {
+  font-size: 2rem; /* Adjust heading size */
+  margin-bottom: 1rem; /* Add spacing below heading */
+}
+
+
+
+
+/* Skills Section */
+#skills {
+  padding: 4rem 0;
+  background: url('Skills-Background.jpg') no-repeat center center/cover; /* Add background image */
+  color: #f5f5f5; /* Text color */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: -1;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center; /* Keeps it centered overall */
+  position: relative;
+  left: 10rem; /* Moves it slightly to the right */
+}
+
+
+/* Skills Columns */
+.skills-columns {
+  display: flex;
+  justify-content: space-evenly; /* Space out the columns evenly */
+  gap: 10rem; /* Significantly increase the gap between columns */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.skills-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem; /* Vertical spacing between individual skills */
+}
+
+/* Skill Item */
+.skill {
+  text-align: left;
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Tools */
+.tools {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+/* Skill Bar */
+.skill-bar {
+  background: #555;
+  height: 10px; /* Slightly taller for emphasis */
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%; /* Full width for longer skill bars */
+}
+
+.skill-level {
+  background: #007bff;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .skills-columns {
+    flex-direction: column;
+    gap: 2rem; /* Reduced gap for smaller screens */
+  }
+}
+
+
+/* Project Section */
+
+/* Projects Section */
+#projects {
+  padding: 3rem 0;
+  background: url('Project-Background.jpg') no-repeat center center/cover; /* Background image */
+  color: #f5f5f5; /* Text color */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional overlay for better readability */
+#projects::before {
+  content: '';
+  position: absolute;
+  top: 0
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: -1;
+}
+
+/* Project Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add space between cards */
+  padding: 20px; /* Add padding to create space between the cards and the border of the page */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.project-card {
+  width: calc(33.33% - 20px); /* Each card will take up 1/3 of the container width minus the gap */
+  box-sizing: border-box; /* Ensure width respects padding */
+  margin-bottom: 20px; /* Space below each card */
+  padding: 20px; /* Optional padding inside the card */
+  border: 1px solid #ddd; /* Border around each card */
+  border-radius: 8px; /* Rounded corners for the card */
+  transition: transform 0.3s ease-in-out; /* Optional smooth hover effect */
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.project-description {
+  font-size: 1em;
+  color: #e0e0e0;
+  margin: 10px 0;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Media Query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%; /* 1 card per row on mobile */
+  }
+}
+
+
+
+/* Styling for the container of the arrow button */
+#arrow-button-container {
+  position: fixed; /* Fixed position to make it stay in the same spot while scrolling */
+  top: -50px; /* Position 20px from the top of the viewport */
+  right: 100px; /* Position 20px from the right edge of the viewport */
+  z-index: 10; /* Make sure it's on top of other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the arrow button */
+#next-button {
+  background-color: #dedede; /* Transparent background */
+  border: 2px solid #000; /* Border around the button */
+  border-radius: 30px; /* Rounded corners */
+  padding: 10px 30px; /* Padding to create a long button */
+  cursor: pointer; /* Make it clickable */
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Styling for the arrow inside the button */
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid black; /* Arrow pointing downwards */
+  margin-left: 10px; /* Add some space after the text (if you want to add any text) */
+}
+
+/* Hover effect: Change button background and arrow color */
+#next-button:hover {
+  background-color: #ff6600; /* Background color on hover */
+  border-color: #ff6600; /* Border color on hover */
+}
+
+#next-button:hover .arrow {
+  border-top-color: white; /* Change arrow color on hover */
+}
+
+
+
+/* Contact Section */
+
+/* Contact Section */
+#contact {
+  padding: 3rem 0;
+  background: url('Contact-Background.jpg') no-repeat center center/cover; /* Background image */
+  color: #f5f5f5; /* Text color */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional overlay for better readability */
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: -1;
+}
+
+/* Contact heading */
+.contact-heading {
+  font-size: 30px; /* Increase the font size as per your requirement */
+  font-weight: bold; /* Make the text bold (optional) */
+  color:#ededed; /* Set the text color */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Contact Form Styling */
+form {
+  background: Transparent; /* Semi-transparent form background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  color: #333; /* Darker label text to contrast with the light form background */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-size: 1rem;
+  color: #080808;
+  margin-bottom: 0.5rem;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+}
+form input::placeholder, form textarea::placeholder {
+  color: #aaa;
+}
+form button {
+  background: #007bff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+form button:hover {
+  background: #0056b3;
+}
+
+/* Animations */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
